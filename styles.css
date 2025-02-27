@@ -1,0 +1,48 @@
+/* Custom styles for Castle High Value website */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Transitions */
+  .transition {
+    transition: all 0.3s ease;
+  }
+  
+  /* Focus styles for accessibility */
+  :focus {
+    outline: 2px solid #1e3a8a;
+    outline-offset: 2px;
+  }
+  
+  /* Custom styling for form elements */
+  input:focus,
+  textarea:focus {
+    border-color: #1e3a8a;
+  }
+  
+  /* Modal styling */
+  #privacyPolicyModal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  #privacyPolicyModal.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Mobile menu animation */
+  #mobileMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  #mobileMenu.active {
+    max-height: 300px;
+  }
+  
+  
