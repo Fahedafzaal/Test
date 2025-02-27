@@ -22,36 +22,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-primary">Castle High Value</a>
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6">
-                    <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
-                    <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
-                    <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
-                    <li><a href="privacypolicy.html" id="privacyPolicyLink" class="hover:text-accent transition">Privacy Policy</a></li>
-                    <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="md:hidden text-gray-600" id="mobileMenuButton">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white w-full" id="mobileMenu">
-            <ul class="px-4 py-2">
-                <li><a href="index.html" class="block py-2 hover:text-accent transition">Home</a></li>
-                <li><a href="about.html" class="block py-2 hover:text-accent transition">About Us</a></li>
-                <li><a href="services.html" class="block py-2 hover:text-accent transition">Services</a></li>
-                <li><a href="privacypolicy.html" id="mobilePrivacyPolicyLink" class="block py-2 hover:text-accent transition">Privacy Policy</a></li>
-                <li><a href="contact.html" class="block py-2 hover:text-accent transition">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+    <!-- Header placeholder -->
+    <div id="header"></div>
 
     <!-- Hero Section -->
     <section class="bg-primary text-white py-16">
@@ -130,35 +102,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Castle High Value</h3>
-                    <p>Premier High-Value Residential Insurance Surveys</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
-                        <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
-                        <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
-                        <li><a href="privacypolicy.html" id="footerPrivacyPolicyLink" class="hover:text-accent transition">Privacy Policy</a></li>
-                        <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                    <p>Email: Castlehighvalue@gmail.com</p>
-                    <!-- <p>Phone: (555) 123-4567</p> -->
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p>&copy; 2025 Castle High Value. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
 
     <!-- Privacy Policy Modal -->
     <div id="privacyPolicyModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
@@ -195,7 +140,7 @@
                     <p class="mb-4">You can opt out of receiving SMS messages at any time by replying with "STOP" to any message you receive from us. After opting out, you will receive a confirmation message, and we will cease sending SMS messages to your number.</p>
                     
                     <h4 class="text-lg font-medium mt-4 mb-2">Help and Support:</h4>
-                    <p class="mb-4">If you need assistance or have questions about our SMS service, reply with "HELP" to any SMS message you receive, or contact our customer support team at support@castlehighvalue.com.</p>
+                    <p class="mb-4">If you need assistance or have questions about our SMS service, reply with "HELP" to any SMS message you receive, or contact our customer support team at <a href="mailto:castlehighvalue@gmail.com">castlehighvalue@gmail.com</a>.</p>
                     
                     <h4 class="text-lg font-medium mt-4 mb-2">Privacy Policy:</h4>
                     <p class="mb-4">Your phone number will be handled in accordance with our Privacy Policy. We do not share SMS opt-in consent with any third parties for solicitation purposes.</p>
@@ -204,6 +149,48 @@
         </div>
     </div>
 
+    <!-- Add Terms & Conditions Modal -->
+    <!-- Delete or comment out this entire block -->
+    <!--
+    <div id="termsModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-4xl mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold">Terms & Conditions</h2>
+                    <button id="closeTerms" class="text-gray-500 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="prose max-w-none">
+                    <p class="text-sm text-gray-500 mb-6">Last Updated: 27-2-2025</p>
+
+                    <h3 class="text-xl font-semibold mt-6 mb-3">SMS Terms of Service</h3>
+                    
+                    <p class="mb-4">By opting into SMS from a web form or other medium, you are agreeing to receive SMS messages from Castle High Value. This includes SMS messages for appointment scheduling, appointment reminders, post-visit instructions, lab notifications, and billing notifications.</p>
+
+                    <h4 class="text-lg font-medium mt-4 mb-2">Message Frequency:</h4>
+                    <p class="mb-4">Message frequency varies depending on your service requirements and notifications preferences.</p>
+
+                    <h4 class="text-lg font-medium mt-4 mb-2">Costs:</h4>
+                    <p class="mb-4">Message and data rates may apply based on your mobile carrier plan.</p>
+
+                    <h4 class="text-lg font-medium mt-4 mb-2">Opt-Out Instructions:</h4>
+                    <p class="mb-4">You can opt out at any time by texting STOP to any message you receive from us.</p>
+
+                    <h4 class="text-lg font-medium mt-4 mb-2">Help and Support:</h4>
+                    <p class="mb-4">For assistance, text HELP or visit our website at https://castlehighvalue.netlify.app/</p>
+
+                    <h4 class="text-lg font-medium mt-4 mb-2">Additional Information:</h4>
+                    <p class="mb-4">Visit https://castlehighvalue.netlify.app/privacypolicy for our Privacy Policy and https://castlehighvalue.netlify.app/terms for our full Terms of Service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <script src="components.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
