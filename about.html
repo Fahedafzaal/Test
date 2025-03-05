@@ -21,185 +21,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Header -->
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-primary">Castle High Value</a>
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6">
-                    <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
-                    <li><a href="about.html" class="hover:text-accent transition font-medium">About Us</a></li>
-                    <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
-                    <li><a href="#" id="privacyPolicyLink" class="hover:text-accent transition">Privacy Policy</a></li>
-                    <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
+    <!-- Header placeholder -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-primary mb-6">About Castle High Value</h1>
+            
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="text-2xl font-semibold text-primary mb-4">Our Mission</h2>
+                <p class="mb-4">
+                    At Castle High Value, our mission is to provide the most comprehensive and accurate high-value residential insurance surveys in the industry. We are dedicated to helping insurers and homeowners protect their valuable assets through detailed risk assessments and expert property evaluations.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h2 class="text-2xl font-semibold text-primary mb-4">Our Expertise</h2>
+                <p class="mb-4">
+                    With decades of combined experience in property assessment and risk management, our team brings unparalleled expertise to every project. We specialize in high-value residential properties, understanding the unique challenges and considerations these homes present.
+                </p>
+                <p class="mb-4">
+                    Our surveyors are trained to identify potential risks that standard inspections might miss, providing insurers with the detailed information they need to offer appropriate coverage and homeowners with peace of mind.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <h2 class="text-2xl font-semibold text-primary mb-4">Our Approach</h2>
+                <p class="mb-4">
+                    We believe in a thorough, detail-oriented approach to property assessment. Our comprehensive surveys include:
+                </p>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Detailed structural evaluations</li>
+                    <li>Accurate replacement cost assessments</li>
+                    <li>Risk identification and mitigation recommendations</li>
+                    <li>Documentation of high-value features and systems</li>
+                    <li>Security and safety evaluations</li>
                 </ul>
-            </nav>
-            <button class="md:hidden text-gray-600" id="mobileMenuButton">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white w-full" id="mobileMenu">
-            <ul class="px-4 py-2">
-                <li><a href="index.html" class="block py-2 hover:text-accent transition">Home</a></li>
-                <li><a href="about.html" class="block py-2 hover:text-accent transition font-medium">About Us</a></li>
-                <li><a href="services.html" class="block py-2 hover:text-accent transition">Services</a></li>
-                <li><a href="#" id="mobilePrivacyPolicyLink" class="block py-2 hover:text-accent transition">Privacy Policy</a></li>
-                <li><a href="contact.html" class="block py-2 hover:text-accent transition">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <!-- About Hero Section -->
-    <section class="bg-primary text-white py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">About Castle High Value</h1>
-            <p class="text-xl max-w-3xl mx-auto">
-                Precision in Protection for Luxury Properties
-            </p>
-        </div>
-    </section>
-
-    <!-- About Content Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto">
-                <p class="text-lg mb-8">
-                    At Castle High Value, we've dedicated over 15 years to perfecting the art of risk assessment for high-value residential properties. Founded by industry veterans in underwriting and loss prevention, we combine technical rigor with a deep understanding of luxury homeownership to deliver unparalleled insurance survey services.
+                <p>
+                    By combining traditional surveying techniques with cutting-edge technology, we deliver reports that provide clear, actionable insights for all stakeholders.
                 </p>
-                
-                <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
-                <p class="text-lg mb-8">
-                    To empower insurers with precise, actionable insights that protect high-net-worth clients' most valuable assets—because standard assessments aren't enough for extraordinary homes.
-                </p>
-                
-                <div class="grid md:grid-cols-2 gap-8 mt-12">
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Our Expertise</h3>
-                        <p>
-                            Our team consists of certified risk assessment professionals with backgrounds in luxury real estate, insurance underwriting, and structural engineering. This multidisciplinary approach ensures we capture every nuance that affects the insurability and value of high-end properties.
-                        </p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                        <h3 class="text-xl font-semibold mb-4">Our Approach</h3>
-                        <p>
-                            We believe in meticulous attention to detail, leveraging advanced technology, and maintaining open communication with both insurers and homeowners. This collaborative approach results in more accurate assessments and better-protected properties.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Team Section -->
-    <!-- <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="https://placehold.co/128x128" alt="Team Member" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-1">Jane Smith</h3>
-                    <p class="text-primary mb-3">Founder & CEO</p>
-                    <p class="text-gray-600">Former Chief Underwriter with 20+ years of experience in high-value property insurance.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="https://placehold.co/600x400" alt="Team Member" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-1">Michael Johnson</h3>
-                    <p class="text-primary mb-3">Chief Risk Officer</p>
-                    <p class="text-gray-600">Certified Risk Manager specializing in catastrophe modeling and loss prevention.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
-                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="https://placehold.co/600x400" alt="Team Member" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-xl font-semibold mb-1">Sarah Williams</h3>
-                    <p class="text-primary mb-3">Director of Operations</p>
-                    <p class="text-gray-600">Expert in streamlining assessment processes and quality control protocols.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Castle High Value</h3>
-                    <p>Premier High-Value Residential Insurance Surveys</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
-                        <li><a href="about.html" class="hover:text-accent transition">About Us</a></li>
-                        <li><a href="services.html" class="hover:text-accent transition">Services</a></li>
-                        <li><a href="#" id="footerPrivacyPolicyLink" class="hover:text-accent transition">Privacy Policy</a></li>
-                        <li><a href="contact.html" class="hover:text-accent transition">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                    <p>Email: <a href="mailto:castlehighvalue@gmail.com">castlehighvalue@gmail.com</a></p>
-                    <!-- <p>Phone: (555) 123-4567</p> -->
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p>&copy; 2025 Castle High Value. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Privacy Policy Modal -->
-    <div id="privacyPolicyModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
-        <div class="bg-white rounded-lg max-w-4xl mx-4 max-h-[90vh] overflow-y-auto">
-            <div class="p-6">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-bold">Privacy Policy</h2>
-                    <button id="closePrivacyPolicy" class="text-gray-500 hover:text-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="prose max-w-none">
-                    <p class="text-sm text-gray-500 mb-6">Last Updated: 27-2-2025</p>
-                    
-                    <p class="mb-4">At Castle High Value, we respect your privacy and are committed to safeguarding the information you provide to us.</p>
-                    
-                    <h3 class="text-xl font-semibold mt-6 mb-3">Mobile Information Sharing</h3>
-                    <p class="mb-4">Your mobile phone number will only be used to send SMS messages related to our services. We will never share your mobile information with third parties or affiliates for marketing or promotional purposes. All categories of data shared, including opt-in consent for SMS messaging, will be used solely by Castle High Value and will not be sold or distributed to third parties.</p>
-                    
-                    <h3 class="text-xl font-semibold mt-6 mb-3">SMS Terms and Conditions</h3>
-                    
-                    <h4 class="text-lg font-medium mt-4 mb-2">Product Description:</h4>
-                    <p class="mb-4">By providing your mobile phone number, you consent to receive SMS messages from Castle High Value related to property surveys, risk assessments, and underwriting support updates. This service will not include marketing or promotional content.</p>
-                    
-                    <h4 class="text-lg font-medium mt-4 mb-2">Message Frequency:</h4>
-                    <p class="mb-4">Message frequency may vary depending on the nature of the service and updates related to your property or policies.</p>
-                    
-                    <h4 class="text-lg font-medium mt-4 mb-2">Message and Data Rates:</h4>
-                    <p class="mb-4">Standard message and data rates may apply based on your mobile carrier.</p>
-                    
-                    <h4 class="text-lg font-medium mt-4 mb-2">Opting Out:</h4>
-                    <p class="mb-4">You can opt out of receiving SMS messages at any time by replying with "STOP" to any message you receive from us. After opting out, you will receive a confirmation message, and we will cease sending SMS messages to your number.</p>
-                    
-                    <h4 class="text-lg font-medium mt-4 mb-2">Help and Support:</h4>
-                    <p class="mb-4">If you need assistance or have questions about our SMS service, reply with "HELP" to any SMS message you receive, or contact our customer support team at <a href="mailto:castlehighvalue@gmail.com">castlehighvalue@gmail.com</a>.</p>
-                    
-                    <h4 class="text-lg font-medium mt-4 mb-2">Privacy Policy:</h4>
-                    <p class="mb-4">Your phone number will be handled in accordance with our Privacy Policy. We do not share SMS opt-in consent with any third parties for solicitation purposes.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <script src="components.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
